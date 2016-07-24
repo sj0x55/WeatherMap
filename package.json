@@ -1,0 +1,52 @@
+{
+  "name": "weather-map",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "grunt karma --test",
+    "build": "grunt webpack",
+    "build-production": "grunt webpack --production",
+    "dev-server": "grunt webpack-dev-server",
+    "start": "live-server --open=dist --port=3000 --host=127.0.0.1"
+  },
+  "author": "Slawomir Janczewski",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^3.0.0",
+    "eslint-loader": "^1.4.1",
+    "grunt": "^1.0.0",
+    "grunt-angular-templates": "^1.0.3",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-eslint": "^18.1.0",
+    "grunt-karma": "^1.0.0",
+    "grunt-webpack": "^1.0.11",
+    "html-minifier": "^3.0.1",
+    "karma": "^0.13.22",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-mocha": "^1.0.1",
+    "karma-mocha-reporter": "^2.0.3",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-sinon": "^1.0.5",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0",
+    "load-grunt-tasks": "^3.5.0",
+    "mocha": "^2.4.5",
+    "ng-annotate": "^1.2.1",
+    "node-sass": "^3.8.0",
+    "phantomjs": "^2.1.7",
+    "phantomjs-prebuilt": "^2.1.7",
+    "sass-loader": "^4.0.0",
+    "sinon": "^1.17.4",
+    "style-loader": "^0.13.1",
+    "time-grunt": "^1.4.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

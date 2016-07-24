@@ -1,0 +1,60 @@
+app {
+  display: block;
+  overflow: auto;
+
+  h2 {
+    border-bottom: 1px solid #999999;
+    padding-bottom: 0.5em;
+  }
+
+  .main-container {
+    font-size: 14px;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+    width: 1024px;
+    margin: auto;
+
+    > .city-list {
+      float: left;
+      width: 40%;
+      padding-right: 1em;
+      box-sizing: border-box;
+    }
+    > .weather-info {
+      float: right;
+      width: 60%;
+      padding-left: 2em;
+      box-sizing: border-box;
+    }
+  }
+
+  .loading {
+    position: relative;
+
+    &:before {
+      font-size: 1.5em;
+      position: absolute;
+      content: 'Loading...';
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 0.5em;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+
+  @media all and (max-width: 1024px) {
+    .main-container {
+      width: 780px;
+      border: 1px solid green;
+    }
+  }
+
+  @media all and (max-width: 780px) {
+    .main-container {
+      width: 100%;
+      min-width: 320px;
+      border: 1px solid red;
+    }
+  }
+}

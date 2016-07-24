@@ -1,0 +1,36 @@
+<div ng-if="$ctrl.cityName" ng-class="{ loading: $ctrl.loading }">
+  <h2>City: {{$ctrl.cityDetails || $ctrl.cityName}}</h2>
+  <div ng-if="$ctrl.weatherDetails && !$ctrl.error">
+    <p>
+      <strong>Observation time:</strong>
+      <span>{{$ctrl.weatherDetails.time}}</span>
+    </p>
+
+    <p>
+      <strong>Temperature (C):</strong>
+      <span>{{$ctrl.weatherDetails.temperature}}</span>
+    </p>
+
+    <p>
+      <strong>Description:</strong>
+      <span>{{$ctrl.weatherDetails.description}}</span>
+    </p>
+
+    <p>
+      <strong>Wind speed (km/h):</strong>
+      <span>{{$ctrl.weatherDetails.windspeed}} km/h</span>
+    </p>
+
+    <p>
+      <strong>Humidity:</strong>
+      <span>{{$ctrl.weatherDetails.humidity}}</span>
+    </p>
+
+    <p>
+      <strong>Pressure:</strong>
+      <span>{{$ctrl.weatherDetails.pressure}} hPa</span>
+    </p>
+  </div>
+
+  <div class="error" ng-if="$ctrl.error">{{$ctrl.error}}</div>
+</div>

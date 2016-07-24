@@ -1,0 +1,8 @@
+<h2>Add new city:</h2>
+<form>
+  <p ng-if="$ctrl.errors.cityName && !$ctrl.cityName">{{$ctrl.errors.cityName}}</p>
+  <div class="input-field">
+    <input type="text" name="cityName" ng-model="$ctrl.cityName">
+  </div>
+  <button ng-click="$ctrl.createNew()">Add new city</button>
+</form>

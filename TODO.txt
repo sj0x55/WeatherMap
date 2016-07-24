@@ -1,0 +1,15 @@
+- Commented each API functions
+- Caching the weather results for each cities.
+- Add logService to catching errors and add possibilities to send to somewhere (server, email etc...).
+- Add more try/catch.
+- Unit tests for Shared Services.
+- Unit tests for Services of Components.
+- Better CSS (use one of CSS framework - Bootstrap?).
+- Show map with weather details.
+- Show YES/NO after click delete button on the city list
+- Replace @@MODULE_PATH to relative path of module
+- Better parsing rawData and log eventually errors in response data
+- Better organize styles and responsive design
+- Better organized main.js - created functions for each part of logic
+- [In the future] Use SASS instead of CSS
+- [Maybe] Use prefix "wm-" in css classes and directive names to avoid conflicts (just if app will be embedded in another website)

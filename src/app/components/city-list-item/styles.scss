@@ -1,0 +1,20 @@
+city-list-item {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0.5em 0;
+  overflow: overlay;
+
+  .city-name {
+    margin-right: 160px
+  }
+
+  .city-buttons {
+    position: absolute;
+    top: 0.2em;
+    right: 0;
+    width: 160px;
+    text-align: right;
+  }
+}
