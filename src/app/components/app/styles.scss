@@ -46,7 +46,6 @@ app {
   @media all and (max-width: 1024px) {
     .main-container {
       width: 780px;
-      border: 1px solid green;
     }
   }
 
@@ -54,7 +53,6 @@ app {
     .main-container {
       width: 100%;
       min-width: 320px;
-      border: 1px solid red;
     }
   }
 }
